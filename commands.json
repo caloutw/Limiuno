@@ -1,0 +1,164 @@
+[
+    {
+        "name": "random",
+        "name_localizations": {
+            "zh-TW": "隨機數",
+            "ja": "ランダム"
+        },
+        "description": "[Command] Generation a random number.",
+        "description_localizations": {
+            "zh-TW": "[指令] 生成隨機數",
+            "ja": "[コマンド] 乱数生成"
+        },
+        "options": [
+            {
+                "name": "min",
+                "name_localizations": {
+                    "zh-TW": "最小值",
+                    "ja": "最小値"
+                },
+                "description": "the min of number",
+                "description_localizations": {
+                    "zh-TW": "亂數的最低數值",
+                    "ja": "乱数の最小値"
+                },
+                "type": 4,
+                "required": true,
+                "min_value": 0
+            },
+            {
+                "name": "max",
+                "name_localizations": {
+                    "zh-TW": "最大值",
+                    "ja": "最大値"
+                },
+                "description": "the max of number",
+                "description_localizations": {
+                    "zh-TW": "亂數的最高數值",
+                    "ja": "乱数の最大値"
+                },
+                "type": 4,
+                "required": true
+            }
+        ]
+    },
+    {
+        "name": "set-dvc",
+        "name_localizations": {
+            "zh-TW": "設定-動態語音頻道",
+            "ja": "設定-ダイナミックボイスチャンネル"
+        },
+        "description": "[Create] Dynamic voice channel",
+        "description_localizations": {
+            "zh-TW": "[設定] 動態語音頻道",
+            "ja": "[設定] ダイナミックボイスチャンネル"
+        },
+        "options": [
+            {
+                "name": "channel",
+                "name_localizations": {
+                    "zh-TW": "頻道",
+                    "ja": "チャンネル"
+                },
+                "description": "Set you want voice channel be dynamic.",
+                "description_localizations": {
+                    "zh-TW": "設定你想要成為動態的語音頻道。",
+                    "ja": "ダイナミックなボイスチャンネルを設定じます。"
+                },
+                "type": 7,
+                "required": true,
+                "channel_types": [
+                    2
+                ]
+            },
+            {
+                "name": "name",
+                "name_localizations": {
+                    "zh-TW": "頻道名稱",
+                    "ja": "チャンネルの名前"
+                },
+                "description": "Set dynamic name.",
+                "description_localizations": {
+                    "zh-TW": "設定動態頻道的名稱。",
+                    "ja": "ボイスチャンネルの名前を設定します。"
+                },
+                "type": 3
+            },
+            {
+                "name": "limit",
+                "name_localizations": {
+                    "zh-TW": "使用者上限",
+                    "ja": "ユーザー上限"
+                },
+                "description": "Set the voice channel max user limit.",
+                "description_localizations": {
+                    "zh-TW": "設定語音頻道的最高使用者上限。",
+                    "ja": "ボイスチャンネルのユーザー上限を設定します。"
+                },
+                "type": 4
+            }
+        ]
+    },
+    {
+        "name": "remove-dvc",
+        "name_localizations": {
+            "zh-TW": "移除-動態語音頻道",
+            "ja": "削除-ダイナミックボイスチャンネル"
+        },
+        "description": "[Remove] Dynamic voice channel",
+        "description_localizations": {
+            "zh-TW": "[移除] 動態語音頻道",
+            "ja": "[削除] ダイナミックボイスチャンネル"
+        },
+        "options": [
+            {
+                "name": "channel",
+                "name_localizations": {
+                    "zh-TW": "頻道",
+                    "ja": "チャンネル"
+                },
+                "description": "Voice channel",
+                "description_localizations": {
+                    "zh-TW": "語音頻道",
+                    "ja": "ボイスチャンネル"
+                },
+                "type": 7,
+                "required": true,
+                "channel_types": [
+                    2
+                ]
+            }
+        ]
+    },
+    {
+        "name": "reset-dvc",
+        "name_localizations": {
+            "zh-TW": "重置-動態語音頻道",
+            "ja": "リセット-ダイナミックボイスチャンネル"
+        },
+        "description": "[Reset] Dynamic voice channel",
+        "description_localizations": {
+            "zh-TW": "[重置] 動態語音頻道",
+            "ja": "[リセット] ダイナミックボイスチャンネル"
+        },
+        "options": [
+            {
+                "name": "channel",
+                "name_localizations": {
+                    "zh-TW": "頻道",
+                    "ja": "チャンネル"
+                },
+                "description": "Set you want voice channel be dynamic.",
+                "description_localizations": {
+                    "zh-TW": "設定你成為動態的語音頻道。",
+                    "ja": "ダイナミックなボイスチャンネルを設定じます。"
+                },
+                "type": 7,
+                "required": true,
+                "channel_types": [
+                    2
+                ]
+            }
+        ]
+    }
+]

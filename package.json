@@ -1,0 +1,17 @@
+{
+  "name": "limiuno",
+  "version": "1.0.0",
+  "description": "discord bot",
+  "license": "ISC",
+  "author": "Calou Zhou",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "node-pinyin": "^0.2.3",
+    "nzh": "^1.0.14"
+  }
+}
